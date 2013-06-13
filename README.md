@@ -1,7 +1,7 @@
 basicControls
 =============
 
-Some behat features to launch very basic controls against a website
+Some behat features to launch very basic controls against a website using Goutte headless browser
 
 #Installation
 
