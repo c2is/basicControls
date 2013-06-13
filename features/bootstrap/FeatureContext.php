@@ -68,7 +68,7 @@ class FeatureContext extends BehatContext
     }
 
     /**
-     * @param string $string The string which shouldn't appear
+     * @param mix $string The string or regexp which shouldn't be found
      *
      * @Then /^I should not get:$/
      */
