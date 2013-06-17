@@ -76,7 +76,7 @@ class FeatureContext extends BehatContext
     {
         if (preg_match("`$string`i", $this->client->getResponse()->getContent(),$matches)) {
             throw new Exception(
-                "Forbidden string found: ".implode(",", $matches)."\n"
+                "Forbidden string found: ".$matches[0]."\n"
             );
         }
     }
