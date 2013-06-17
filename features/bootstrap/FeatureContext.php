@@ -74,9 +74,9 @@ class FeatureContext extends BehatContext
      */
     public function iShouldNotGet(PyStringNode $string)
     {
-        if (preg_match("`$string`i", $this->client->getResponse()->getContent())) {
+        if (preg_match("`$string`i", $this->client->getResponse()->getContent(),$matches)) {
             throw new Exception(
-                "Forbidden string found:'".$string."'\n"
+                "Forbidden string found: ".implode(",", $matches)."\n"
             );
         }
     }
